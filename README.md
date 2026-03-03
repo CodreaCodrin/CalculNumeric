@@ -1,5 +1,5 @@
 # Calcul numeric
 
-[Teorie Calcul Numeric](./README.md)
+[Teorie Calcul Numeric](./teorie.md)
 
 ![Ciucas](/assets/images/Ciucas.jpg)
