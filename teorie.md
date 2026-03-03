@@ -26,6 +26,28 @@ unde restul Lagrange este:
 
 $$(R_n f)(x) = \frac{x^{n+1}}{(n+1)!} f^{(n+1)}(\theta x), \qquad \theta \in (0, 1)$$
 
+### Aproximarea Padé
+
+Aproximarea Padé reprezintă o funcție sub formă de **fracție între două polinoame**:
+
+$$R(x) = \frac{P_m(x)}{Q_n(x)} = \frac{a_0 + a_1 x + a_2 x^2 + \cdots + a_m x^m}{1 + b_1 x + b_2 x^2 + \cdots + b_n x^n}$$
+
+Ideea de bază la Padé este că $f(x) \cdot Q(x) - P(x)$ trebuie să aibă cât mai mulți termeni nuli la început.
+
+$$f(x) \cdot Q_n(x) - P_m(x) = O(x^{m+n+1})$$
+
+### Seria Geometrică
+
+$$S = a + aq + aq^2 + aq^3 + \cdots = \sum_{n=0}^{\infty} aq^n$$
+
+Matematicienii au demonstrat că, dacă valoarea rației este mică ($|q| < 1$), această sumă infinită nu se duce la infinit, ci se "oprește" (converge) la o valoare fixă:
+
+$$S = \frac{a}{1 - q}$$
+
+Suma parțială a primilor $n$ termeni:
+
+$$S_n = \frac{1 - q^n}{1 - q}$$
+
 | Nr. |    Funcția $f(x)$    |             Derivata $f'(x)$             |
 | :-: | :------------------: | :--------------------------------------: |
 |  1  |         $c$          |                   $0$                    |
