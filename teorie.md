@@ -104,30 +104,30 @@ $$3.\quad (f \cdot g)' = f' \cdot g + f \cdot g' \qquad\qquad 4.\quad \left(\fra
 
 ## Formule Trigonometrice
 
-| Nr. | Formula                                                                                                                          |
-| :-: | :------------------------------------------------------------------------------------------------------------------------------- |
-|  1  | $\sin^2 x + \cos^2 x = 1$                                                                                                        |
-|  2  | $\sin 2x = 2\sin x \cdot \cos x$                                                                                                 |
-|  3  | $\cos 2x = \cos^2 x - \sin^2 x = 2\cos^2 x - 1 = 1 - 2\sin^2 x$                                                                  |
-|  4  | $\sin(-x) = -\sin x$                                                                                                             |
-|  5  | $\cos(-x) = \cos x$                                                                                                              |
-|  6  | $\text{tg}(-x) = -\text{tg}\, x$                                                                                                 |
-|  7  | $\text{ctg}(-x) = -\text{ctg}\, x$                                                                                               |
-|  8  | $\sin(x + 2k\pi) = \sin x, \quad k \in \mathbb{Z}$                                                                               |
-|  9  | $\cos(x + 2k\pi) = \cos x$                                                                                                       |
-| 10  | $\text{tg}(x + k\pi) = \text{tg}\, x, \quad x \in \mathbb{R} \setminus \left\{\frac{(2k+1)\pi}{2} \mid k \in \mathbb{Z}\right\}$ |
-| 11  | $\text{ctg}(x + k\pi) = \text{ctg}\, x, \quad x \in \mathbb{R} \setminus \{k\pi \mid k \in \mathbb{Z}\}$                         |
-| 12  | $\sin(a + b) = \sin a \cdot \cos b + \sin b \cdot \cos a, \quad a, b \in \mathbb{R}$                                             |
-| 13  | $\sin(a - b) = \sin a \cdot \cos b - \sin b \cdot \cos a$                                                                        |
-| 14  | $\cos(a + b) = \cos a \cdot \cos b - \sin a \cdot \sin b$                                                                        |
-| 15  | $\cos(a - b) = \cos a \cdot \cos b + \sin a \cdot \sin b$                                                                        |
-| 16  | $\sin a + \sin b = 2\sin\dfrac{a+b}{2}\cos\dfrac{a-b}{2}$                                                                        |
-| 17  | $\sin a - \sin b = 2\cos\dfrac{a+b}{2}\sin\dfrac{a-b}{2}$                                                                        |
-| 18  | $\cos a + \cos b = 2\cos\dfrac{a+b}{2}\cos\dfrac{a-b}{2}$                                                                        |
-| 19  | $\cos a - \cos b = -2\sin\dfrac{a+b}{2}\sin\dfrac{a-b}{2}$                                                                       |
-| 20  | $\sin a \cdot \sin b = \dfrac{\cos(a-b) - \cos(a+b)}{2}$                                                                         |
-| 21  | $\cos a \cdot \cos b = \dfrac{\cos(a+b) + \cos(a-b)}{2}$                                                                         |
-| 22  | $\sin a \cdot \cos b = \dfrac{\sin(a+b) + \sin(a-b)}{2}$                                                                         |
+| Nr. | Formula                                                                                                                         |
+| :-: | :------------------------------------------------------------------------------------------------------------------------------ |
+|  1  | $\sin^2 x + \cos^2 x = 1$                                                                                                       |
+|  2  | $\sin 2x = 2\sin x \cdot \cos x$                                                                                                |
+|  3  | $\cos 2x = \cos^2 x - \sin^2 x = 2\cos^2 x - 1 = 1 - 2\sin^2 x$                                                                 |
+|  4  | $\sin(-x) = -\sin x$                                                                                                            |
+|  5  | $\cos(-x) = \cos x$                                                                                                             |
+|  6  | $\text{tg}(-x) = -\text{tg}\, x$                                                                                                |
+|  7  | $\text{ctg}(-x) = -\text{ctg}\, x$                                                                                              |
+|  8  | $\sin(x + 2k\pi) = \sin x, \quad k \in \mathbb{Z}$                                                                              |
+|  9  | $\cos(x + 2k\pi) = \cos x$                                                                                                      |
+| 10  | $\text{tg}(x + k\pi) = \text{tg}\, x, \quad x \in \mathbb{R} \setminus \lbrace\frac{(2k+1)\pi}{2} \mid k \in \mathbb{Z}\rbrace$ |
+| 11  | $\text{ctg}(x + k\pi) = \text{ctg}\, x, \quad x \in \mathbb{R} \setminus \{k\pi \mid k \in \mathbb{Z}\}$                        |
+| 12  | $\sin(a + b) = \sin a \cdot \cos b + \sin b \cdot \cos a, \quad a, b \in \mathbb{R}$                                            |
+| 13  | $\sin(a - b) = \sin a \cdot \cos b - \sin b \cdot \cos a$                                                                       |
+| 14  | $\cos(a + b) = \cos a \cdot \cos b - \sin a \cdot \sin b$                                                                       |
+| 15  | $\cos(a - b) = \cos a \cdot \cos b + \sin a \cdot \sin b$                                                                       |
+| 16  | $\sin a + \sin b = 2\sin\dfrac{a+b}{2}\cos\dfrac{a-b}{2}$                                                                       |
+| 17  | $\sin a - \sin b = 2\cos\dfrac{a+b}{2}\sin\dfrac{a-b}{2}$                                                                       |
+| 18  | $\cos a + \cos b = 2\cos\dfrac{a+b}{2}\cos\dfrac{a-b}{2}$                                                                       |
+| 19  | $\cos a - \cos b = -2\sin\dfrac{a+b}{2}\sin\dfrac{a-b}{2}$                                                                      |
+| 20  | $\sin a \cdot \sin b = \dfrac{\cos(a-b) - \cos(a+b)}{2}$                                                                        |
+| 21  | $\cos a \cdot \cos b = \dfrac{\cos(a+b) + \cos(a-b)}{2}$                                                                        |
+| 22  | $\sin a \cdot \cos b = \dfrac{\sin(a+b) + \sin(a-b)}{2}$                                                                        |
 
 ### Formule de reducere
 
