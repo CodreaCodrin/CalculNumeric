@@ -48,6 +48,40 @@ Suma parțială a primilor $n$ termeni:
 
 $$S_n = \frac{1 - q^n}{1 - q}$$
 
+## Formule pentru calculul limitelor
+
+### Regula lui l'Hôpital
+
+Se aplică doar pentru cazurile de nedeterminare de tipul $\frac{0}{0}$ sau $\frac{\infty}{\infty}$:
+$$ \lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)} $$
+
+### Limite fundamental remarcabile
+
+| Nr. | Limita | Valoarea |
+| :-: | :--- | :-: |
+| 1 | $\lim_{x \to 0} \frac{\sin x}{x}$ | $1$ |
+| 2 | $\lim_{x \to 0} \frac{\text{tg } x}{x}$ | $1$ |
+| 3 | $\lim_{x \to 0} \frac{\arcsin x}{x}$ | $1$ |
+| 4 | $\lim_{x \to 0} \frac{\text{arctg } x}{x}$ | $1$ |
+| 5 | $\lim_{x \to \pm\infty} \left(1 + \frac{1}{x}\right)^x$ | $e$ |
+| 6 | $\lim_{x \to 0} (1 + x)^{\frac{1}{x}}$ | $e$ |
+| 7 | $\lim_{x \to 0} \frac{\ln(1+x)}{x}$ | $1$ |
+| 8 | $\lim_{x \to 0} \frac{a^x - 1}{x}$, cu $a > 0$ | $\ln a$ |
+| 9 | $\lim_{x \to 0} \frac{e^x - 1}{x}$ | $1$ |
+| 10 | $\lim_{x \to 0} \frac{(1+x)^r - 1}{x}$ | $r$ |
+
+### Limite la infinit pentru funcții raționale
+
+Dacă avem $\lim_{x \to \infty} \frac{P(x)}{Q(x)}$ (unde funcțiile din fracție sunt polinoame strict de grad $n$, respectiv $m$):
+
+- **Dacă $n > m$**: limita este $\pm \infty$ (se decide în funcție de semnul diviziunii coeficienților dominanți).
+
+- **Dacă $n = m$**: limita este egală cu raportul coeficienților dominanți (ex: $\frac{a_n}{b_m}$).
+
+- **Dacă $n < m$**: limita este $0$.
+
+## Derivate și Integrale
+
 | Nr. |    Funcția $f(x)$    |             Derivata $f'(x)$             |
 | :-: | :------------------: | :--------------------------------------: |
 |  1  |         $c$          |                   $0$                    |
@@ -76,6 +110,8 @@ $$S_n = \frac{1 - q^n}{1 - q}$$
 $$1.\quad (f + g)' = f' + g' \qquad\qquad 2.\quad (nr \cdot f)' = nr \cdot f'$$
 
 $$3.\quad (f \cdot g)' = f' \cdot g + f \cdot g' \qquad\qquad 4.\quad \left(\frac{f}{g}\right)' = \frac{f' \cdot g - f \cdot g'}{g^2}$$
+
+$$5.\quad [f(g(x))]' = f'(g(x)) \cdot g'(x)$$
 
 | Nr. | Integrala                              | Rezultat                                                |
 | :-: | :------------------------------------- | :------------------------------------------------------ |
@@ -151,3 +187,150 @@ $$3.\quad (f \cdot g)' = f' \cdot g + f \cdot g' \qquad\qquad 4.\quad \left(\fra
 |    $\cos x$     | $1$  | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{\sqrt{2}}{2}$ |    $\dfrac{1}{2}$     |       $0$        |    $-\dfrac{1}{2}$     | $-\dfrac{\sqrt{2}}{2}$ | $-\dfrac{\sqrt{3}}{2}$ |  $-1$  | $-\dfrac{\sqrt{3}}{2}$ | $-\dfrac{\sqrt{2}}{2}$ |    $-\dfrac{1}{2}$     |        $0$        |     $\dfrac{1}{2}$     | $\dfrac{\sqrt{2}}{2}$  | $\dfrac{\sqrt{3}}{2}$  |  $1$   |
 | $\text{tg}\,x$  | $0$  | $\dfrac{\sqrt{3}}{3}$ |          $1$          |      $\sqrt{3}$       |       $-$        |      $-\sqrt{3}$       |          $-1$          | $-\dfrac{\sqrt{3}}{3}$ |  $0$   | $\dfrac{\sqrt{3}}{3}$  |          $1$           |       $\sqrt{3}$       |        $-$        |      $-\sqrt{3}$       |          $-1$          | $-\dfrac{\sqrt{3}}{3}$ |  $0$   |
 | $\text{ctg}\,x$ | $-$  |      $\sqrt{3}$       |          $1$          | $\dfrac{\sqrt{3}}{3}$ |       $0$        | $-\dfrac{\sqrt{3}}{3}$ |          $-1$          |      $-\sqrt{3}$       |  $-$   |       $\sqrt{3}$       |          $1$           | $\dfrac{\sqrt{3}}{3}$  |        $0$        | $-\dfrac{\sqrt{3}}{3}$ |          $-1$          |      $-\sqrt{3}$       |  $-$   |
+
+## Logaritmi și Proprietăți
+
+**Definiție:** $\log_a x = y \iff a^y = x$ (cu condițiile $a > 0$, $a \neq 1$, $x > 0$)
+
+**Logaritmi particulari:**
+
+- Logaritm natural (baza $e$): $\ln x = \log_e x$
+
+- Logaritm zecimal (baza $10$): $\lg x = \log_{10} x$
+
+**Proprietăți fundamentale:**
+$$1.\quad \log_a 1 = 0 \qquad\qquad 2.\quad \log_a a = 1$$
+
+$$3.\quad \log_a(x \cdot y) = \log_a x + \log_a y \qquad\qquad 4.\quad \log_a\left(\frac{x}{y}\right) = \log_a x - \log_a y$$
+
+$$5.\quad \log_a(x^p) = p \cdot \log_a x \qquad\qquad 6.\quad \log_{a^q} x = \frac{1}{q} \cdot \log_a x$$
+
+$$7.\quad \log_{a^q}(x^p) = \frac{p}{q} \cdot \log_a x \qquad\qquad 8.\quad a^{\log_a x} = x$$
+
+**Schimbarea bazei și alte identități:**
+$$9.\quad \log_a x = \frac{\log_b x}{\log_b a} \qquad\qquad 10.\quad \log_a b = \frac{1}{\log_b a}$$
+
+$$11.\quad \log_a b \cdot \log_b c = \log_a c \qquad\qquad 12.\quad x^{\log_a y} = y^{\log_a x}$$
+
+### La conversii
+
+- bitii puterii sunt reprezentarea in baza 2 a 127 + puterea
+- trebuie mutata virgula astfel incat primul 1 sa fie in dreapta ei
+- ce e la dreapta de virgula e mantisa
+- primul bit e semnul, apoi este puterea, apoi este mantisa
+
+### Erori
+
+- **Eroarea absolută:**
+  $$|\Delta x| = |x - x^*|$$
+- **Eroarea relativă** (cea pe care o folosim în formulele de condiționare):
+  $$|\delta x| = \frac{|\Delta x|}{|x|}$$
+
+### Elemente de bază pentru matrici
+
+- **Matricea identitate ($I$ sau $I_n$):** Este matricea pătratică cu $1$ pe diagonala principală și $0$ în rest. Este elementul neutru la înmulțirea matricilor ($A \cdot I = I \cdot A = A$).
+  $$ I_n = \begin{pmatrix} 1 & 0 & \dots & 0 \\ 0 & 1 & \dots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & 1 \end{pmatrix} $$
+
+- **Transpusa unei matrici ($A^T$):** Se obține scriind liniile matricei $A$ sub formă de coloane (liniile devin coloane și coloanele devin linii). Elementele respectă proprietatea $a^T_{ij} = a_{ji}$.
+  $$ A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^T = \begin{pmatrix} a & c \\ b & d \end{pmatrix} $$
+
+- **Inversa unei matrici ($A^{-1}$):** O matrice pătratică $A$ se numește inversabilă dacă determinantul ei este nenul ($\det(A) \neq 0$). Inversa satisface relația $A \cdot A^{-1} = A^{-1} \cdot A = I$.
+  **Formula generală:**
+  $$ A^{-1} = \frac{1}{\det(A)} \cdot A^{\ast} $$
+  (unde $A^{\ast}$ este matricea adjunctă, adică transpusa matricei cofactorilor)
+
+  **Exemplu rapid pentru o matrice 2x2:**
+  $$ A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} $$
+
+- **Matricea adjunctă ($A^{\ast}$):** Este transpusa matricei cofactorilor. Pașii pentru a o construi:
+  1. Se calculează cofactorii $C_{ij}$ pentru fiecare element al matricei:
+     $$ C_{ij} = (-1)^{i+j} \det(M_{ij}) $$
+     (unde $M*{ij}$ se numește minor și reprezintă determinantul matricei rămase după tăierea liniei $i$ și coloanei $j$ din matricea $A$)
+  2. Matricea adjunctă este transpusa matricei formate din acești cofactori $C$:
+     $$ A^{\ast} = C^T $$
+
+### Norme
+
+- **Norma 1 (Manhattan):** Suma modulelor elementelor.
+  $$\|x\|_1 = |x_1| + \dots + |x_m|$$
+- **Norma 2 (Euclidiană):** Radical din suma pătratelor.
+  $$\|x\|_2 = \sqrt{x_1^2 + \dots + x_m^2}$$
+- **Norma $\infty$ (Supremum):** Cel mai mare modul.
+  $$\|x\|_\infty = \max\{|x_1|, \dots, |x_m|\}$$
+
+#### Norme matriceale
+
+- **Norma 1 (Norma coloană):** $\|A\|_1$
+  Reprezintă **maximul sumelor de pe coloane** (luând elementele în modul).
+  - **Cum faci practic:** Aduni elementele de pe fiecare coloană în parte (ignorând semnele de minus). Norma 1 va fi cel mai mare rezultat obținut.
+  - **Formula matematică:**
+    $$\|A\|_1 = \max_{1 \le j \le n} \sum_{i=1}^m |a_{ij}|$$
+
+- **Norma 2:** $\|A\|_2$
+  - **Formula matematică:**
+    $$\|A\|_2 = \sqrt{\lambda_{max}(A^T \cdot A)}$$
+  - **Cum faci practic (calcul de mână):**
+    1. **Afli transpusa:** Iei matricea $A$ și scrii transpusa ei, $A^T$ (liniile se transformă în coloane).
+    2. **Înmulțești matricile:** Faci înmulțirea $A^T \cdot A$. Vei obține o nouă matrice, care va fi întotdeauna pătratică și simetrică. Să o numim $B$.
+    3. **Calculezi valorile proprii ($\lambda$):** Trebuie să găsești valorile proprii ale matricei $B$. Asta înseamnă să rezolvi ecuația caracteristică: $\det(B - \lambda \cdot I) = 0$, unde $I$ este matricea identitate. Vei obține un polinom în funcție de $\lambda$ căruia trebuie să-i găsești rădăcinile.
+    4. **Alegi maximul:** Dintre toate valorile proprii pe care le-ai găsit (care vor fi numere reale și $\geq 0$), o alegi pe cea mai mare. Aceasta este $\lambda_{max}$.
+    5. **Aplici radicalul:** Extragi radical din acea valoare maximă, iar rezultatul este $\|A\|_2$.
+
+- **Norma infinit (Norma linie):** $\|A\|_\infty$
+  Reprezintă **maximul sumelor de pe linii** (la fel, luate în modul).
+  - **Cum faci practic:** Aduni elementele de pe fiecare linie în parte (ignorând semnele minus). Norma infinit va fi cel mai mare rezultat obținut.
+  - **Formula matematică:**
+    $$\|A\|_\infty = \max_{1 \le i \le m} \sum_{j=1}^n |a_{ij}|$$
+
+### Numărul de condiționare
+
+Formula generală a propagării erorilor:
+$$|\delta y| \leq cond \cdot |\delta x|$$
+
+Unde:
+
+- $\delta y$ reprezintă eroarea (sau perturbația) rezultatului / ieșirii.
+- $cond$ este numărul de condiționare, care indică factorul de amplificare a erorii.
+- $\delta x$ reprezintă eroarea (sau perturbația) datelor de intrare.
+
+#### 1. Funcții de o singură variabilă (1D)
+
+Dacă ai o funcție simplă $f : \mathbb{R} \to \mathbb{R}$ (ex: $f(x) = e^x$ sau $f(x) = x^2 + 2$), folosești derivata de ordinul 1.
+
+- **Formula:**
+  $$cond f(x) = \left| \frac{x \cdot f'(x)}{f(x)} \right|$$
+- **Cum o folosești:** Derivezi funcția, înmulțești cu $x$, împarți la funcția originală și iei modulul. Dacă rezultatul e $\gg 1$, problema e prost condiționată.
+
+#### 2. Sisteme Liniare ($A \cdot y = b$)
+
+Aici vrei să afli cât de sensibilă este matricea sistemului tău ($A$) la mici erori. Este cea mai des folosită formulă la laboratoare.
+
+- **Formula:**
+  $$cond_p(A) = \|A\|_p \cdot \|A^{-1}\|_p$$
+- **Cum o folosești:**
+  1. Calculezi norma matricei $A$ (folosind norma cerută $p$).
+  2. Calculezi inversa matricei, $A^{-1}$.
+  3. Calculezi norma lui $A^{-1}$.
+  4. Le înmulțești.
+
+#### 3. Funcții Multivariabile
+
+Dacă ai un sistem de funcții $f = (f_1, \dots, f_n)$ cu mai multe variabile $x = (x_1, \dots, x_m)$, ai două definiții în notițe. Pe care o folosești depinde de preferința ta sau de cerință:
+
+- **Definiția 1 (Folosind matricea $\Gamma$):** Construiești matricea $\Gamma(x)$ în care fiecare element de pe linia $i$ și coloana $j$ se calculează așa:
+  $$\Gamma_{ij}(x) = \frac{x_j}{f_i(x)} \cdot \frac{\partial f_i}{\partial x_j}(x)$$
+  Apoi calculezi norma matricială: $cond_p f(x) = \|\Gamma(x)\|_p$
+- **Definiția 2 (Folosind matricea Jacobiană):**
+  - **Formula Matricei Jacobiane:** Construiești matricea $J$ formată doar din derivatele parțiale $\frac{\partial f_i}{\partial x_j}$:
+    $$ J = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \dots & \frac{\partial f_1}{\partial x_n} \\ \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \dots & \frac{\partial f_2}{\partial x_n} \\ \vdots & \vdots & \ddots & \vdots \\ \frac{\partial f_m}{\partial x_1} & \frac{\partial f_m}{\partial x_2} & \dots & \frac{\partial f_m}{\partial x_n} \end{pmatrix} $$
+  - **Formula Condiționării (Definiția 2 tradusă):** Odată ce ai construit această matrice cu derivate, formula din definiția 2 pentru numărul de condiționare devine foarte asemănătoare cu cea de la funcțiile simple (modul din $x \cdot f'(x)/f(x)$), doar că înlocuim derivata simplă cu norma matricei Jacobiane:
+    $$cond_p f(x) = \frac{\|x\|_p \cdot \|J(x)\|_p}{\|f(x)\|_p}$$
+    _Unde $p$ reprezintă tipul de normă ales (1, 2, infinit)._
+
+#### 4. Rădăcinile Polinoamelor
+
+Dacă ai un polinom $p(x) = x^n + a_1x^{n-1} + \dots + a_n = 0$ și vrei să vezi cât de sensibilă e o rădăcină $\xi$ la modificarea coeficienților $a_j$:
+
+- **Formula:**
+  $$cond_1 \xi(a) = \frac{\sum_{j=1}^n |a_j \cdot \xi^{n-j}|}{|\xi \cdot p'(\xi)|}$$
+- **Cum o folosești:** Ai nevoie de coeficienții polinomului, de valoarea rădăcinii $\xi$ și de valoarea derivatei polinomului în acea rădăcină, $p'(\xi)$.
