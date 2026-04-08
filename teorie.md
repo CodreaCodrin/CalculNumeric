@@ -334,3 +334,26 @@ Dacă ai un polinom $p(x) = x^n + a_1x^{n-1} + \dots + a_n = 0$ și vrei să vez
 - **Formula:**
   $$cond_1 \xi(a) = \frac{\sum_{j=1}^n |a_j \cdot \xi^{n-j}|}{|\xi \cdot p'(\xi)|}$$
 - **Cum o folosești:** Ai nevoie de coeficienții polinomului, de valoarea rădăcinii $\xi$ și de valoarea derivatei polinomului în acea rădăcină, $p'(\xi)$.
+
+## Interpolarea Lagrange
+
+Polinomul de interpolare Lagrange $P(x)$ pentru un set de puncte $(x_0, y_0), (x_1, y_1), \dots, (x_n, y_n)$ este dat de formula:
+
+$$P(x) = y_0 \cdot L_0(x) + y_1 \cdot L_1(x) + \dots + y_n \cdot L_n(x)$$
+
+unde polinoamele fundamentale Lagrange $L_i(x)$ se calculează astfel:
+
+$$L_i(x) = \prod_{j=0, j \neq i}^{n} \frac{x - x_j}{x_i - x_j}$$
+
+### Forma baricentrică
+
+Pentru evaluarea și actualizarea eficientă a polinomului (în $O(n)$ operații), se folosește forma baricentrică.
+
+Notând:
+$$\ell(x) = (x - x_0)(x - x_1)\cdots(x - x_n)$$
+
+Se definesc **ponderile baricentrice**:
+$$w_j = \frac{1}{\prod_{k \neq j} (x_j - x_k)}, \quad j = 0, \dots, n$$
+
+Astfel, polinomul de interpolare Lagrange se poate scrie:
+$$P(x) = \ell(x) \sum_{j=0}^{n} \frac{w_j}{x - x_j} y_j$$
