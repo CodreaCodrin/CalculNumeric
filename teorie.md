@@ -357,3 +357,21 @@ $$w_j = \frac{1}{\prod_{k \neq j} (x_j - x_k)}, \quad j = 0, \dots, n$$
 
 Astfel, polinomul de interpolare Lagrange se poate scrie:
 $$P(x) = \ell(x) \sum_{j=0}^{n} \frac{w_j}{x - x_j} y_j$$
+
+## Interpolarea Newton
+
+Formula generală a polinomului Newton, notat cu $N(x)$, arată așa:
+
+$$N(x) = c_0 + c_1(x - x_0) + c_2(x - x_0)(x - x_1) + \dots + c_n(x - x_0)(x - x_1)\dots(x - x_{n-1})$$
+
+Hermite
+
+$$H(x) = c_0 + c_1(x - z_0) + c_2(x - z_0)(x - z_1) + \dots + c_n(x - z_0)(x - z_1)\dots(x - z_{n-1})$$
+
+### Formula Erorii
+
+Dacă ai un polinom de interpolare construit pe $n$ puncte în total (incluzând dublurile), eroarea $E(x)$ într-un punct $x$ este dată de formula:
+
+$$E(x) = \frac{f^{(n)}(\xi)}{n!} \cdot (x - z_0)(x - z_1)\dots(x - z_{n-1})$$
+
+In cazul Hermite, $\xi$ mereu estre intre punctele respective (nodurile) iar derivata este de ordinul cate z-uri sunt. Daca is 2 noduri derivata e de ordin 4.
