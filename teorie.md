@@ -375,3 +375,23 @@ Dacă ai un polinom de interpolare construit pe $n$ puncte în total (incluzând
 $$E(x) = \frac{f^{(n)}(\xi)}{n!} \cdot (x - z_0)(x - z_1)\dots(x - z_{n-1})$$
 
 In cazul Hermite, $\xi$ mereu estre intre punctele respective (nodurile) iar derivata este de ordinul cate z-uri sunt. Daca is 2 noduri derivata e de ordin 4.
+
+## Spline
+
+Formula pasului (lungimea intervalului)
+
+$$h_i = x_{i+1} - x_i$$
+
+Ecuația de continuitate (pentru aflarea momentelor $M_i$)
+
+$$\frac{h_{i-1}}{6}M_{i-1} + \frac{h_{i-1} + h_i}{3}M_i + \frac{h_i}{6}M_{i+1} = \frac{f(x_{i+1}) - f(x_i)}{h_i} - \frac{f(x_i) - f(x_{i-1})}{h_{i-1}}$$
+
+Ecuația pentru capătul stâng (Nouă - folosește derivata $f'(x_0)$)
+$$\frac{h_0}{3}M_0 + \frac{h_0}{6}M_1 = \frac{f(x_1) - f(x_0)}{h_0} - f'(x_0)$$
+
+Ecuația pentru capătul drept (Nouă - folosește derivata $f'(x_2)$)
+$$\frac{h_1}{6}M_1 + \frac{h_1}{3}M_2 = f'(x_2) - \frac{f(x_2) - f(x_1)}{h_1}$$
+
+Ecuația polinomului Spline pentru intervalul $i$
+
+$$S_i(x) = \frac{M_{i}}{6h_i}(x_{i+1} - x)^3 + \frac{M_{i+1}}{6h_i}(x - x_i)^3 + \left( \frac{f(x_i)}{h_i} - \frac{M_i h_i}{6} \right)(x_{i+1} - x) + \left( \frac{f(x_{i+1})}{h_i} - \frac{M_{i+1} h_i}{6} \right)(x - x_i)$$
